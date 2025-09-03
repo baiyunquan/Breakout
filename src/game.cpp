@@ -39,9 +39,7 @@ float ShakeTime = 0.0f;
 
 Game::Game(unsigned int width, unsigned int height) 
     : State(GAME_MENU), Keys(), KeysProcessed(), Width(width), Height(height), Level(0), Lives(3), Points()
-{ 
-
-}
+{}
 
 Game::~Game()
 {
