@@ -56,7 +56,7 @@ Game::~Game()
 
 void Game::Init()
 {
-    SoundEngine->play2D("resources/audio/LosingControl.mp3", true);
+    //SoundEngine->play2D("resources/audio/LosingControl.mp3", true);
     // load shaders
     ResourceManager::LoadShader("sprite.vs", "sprite.fs", nullptr, "sprite");
     ResourceManager::LoadShader("particle.vs", "particle.fs", nullptr, "particle");
