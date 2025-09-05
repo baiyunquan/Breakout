@@ -66,6 +66,8 @@ int main(int argc, char *argv[])
     float deltaTime = 0.0f;
     float lastFrame = 0.0f;
 
+	Breakout.State = GAME_MENU;
+
     while (!glfwWindowShouldClose(window))
     {
         // calculate delta time
@@ -112,7 +114,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
         else if (action == GLFW_RELEASE)
         {
             Breakout.Keys[key] = false;
-//            Breakout.KeysProcessed[key] = false;
+            Breakout.KeysProcessed[key] = false;
         }
     }
 }
